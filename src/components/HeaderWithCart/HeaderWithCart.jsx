@@ -1,4 +1,7 @@
 import { useSelector } from "react-redux"
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+
+
 
 
 function HeaderWithCart() {
@@ -18,7 +21,10 @@ function HeaderWithCart() {
     return (
         <header className='App-header'>
             <h1 className='App-title'>Prime Pizza</h1>
-            <h3>Total: {calculateTotal()}</h3>
+            <svg data-testid="ShoppingCartIcon"></svg>
+            <h3>{calculateTotal()}</h3>
+            <br />
+            <br />
         </header>
     )
 }

@@ -30,8 +30,8 @@ const [toggle, setToggle] =useState(true)
 
 return(
     <>
-     <div key={pizza.id}> 
-                  {pizza.name} {pizza.description} {pizza.price} <img src={pizza.image_path} alt="pic of pizza" /> 
+     <div class="pizzaDiv" key={pizza.id}> 
+                  {pizza.name} <br /> {pizza.description} <br /> {pizza.price} <br /> <img className="pizza" src={pizza.image_path} alt="pic of pizza" /> 
 
                     {toggle ? 
                    <button onClick ={() => addToCart()}>Add</button>:

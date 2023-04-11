@@ -3,6 +3,7 @@ import PizzaItem from "../PizzaItem/PizzaItem"
 import { useHistory } from 'react-router-dom';
 
 
+
 function PizzaList() {
     const pizzaList = useSelector(store => store.pizzaList)
 
@@ -18,7 +19,7 @@ function PizzaList() {
             <h2>Step 1: Select Your Pizza</h2>
 
 
-            <div>
+            <div >
                 {pizzaList.map((pizza) =>
                 <PizzaItem key={pizza.id} pizza={pizza} />
                  
@@ -26,7 +27,7 @@ function PizzaList() {
             )}
             </div>
 
-                <button onClick={handleClick}>NEXT</button>
+                <button id='nextBtn' onClick={handleClick}>NEXT</button>
 
 
 

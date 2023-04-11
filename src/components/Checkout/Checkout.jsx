@@ -3,7 +3,7 @@ import { useHistory } from 'react-router-dom';
 import axios from 'axios'
 
 function Checkout() {
-    const dispatch = useDispatch()
+    const dispatch = useDispatch();
     const history = useHistory();
 
     const checkoutCustomerInfo = useSelector(store => store.customerInfo)
